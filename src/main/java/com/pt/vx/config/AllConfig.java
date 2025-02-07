@@ -21,15 +21,15 @@ import java.util.List;
  */
 public class AllConfig {
     public static final String cron = "0 0 8 * * ?"; //分别代表：秒、分、时、日、月、星期
-    public static final String VxAppId = "微信的APPID";
-    public static final String VxAppSecret = "微信的密钥";
-    public static final String WeatherKey = "高德地图key";
-    public static final String WeatherKey_HeFeng = "和风天气KEY";
+    public static final String VxAppId = "wx4f84772b9a892b56";
+    public static final String VxAppSecret = "0908996c89e3622612d60fd5b0ae6ef4";
+    public static final String WeatherKey = "aa888466a7560b311a4afd98f1aba619";
+    public static final String WeatherKey_HeFeng = "ab26943d98be4cabb945df3cd9e8117f";
 
     //下列所有填写的  true 为开启， false 为不开启 ，#XXXXXX是颜色16进制HEX码（不知道颜色16进制HEX码可以百度）
     //系统开关
     public static final boolean OPEN_MESSAGE_SPLIT = true; //是否开启消息分裂（大于100字的消息会被分裂成多个,如tianGou超过了一百个字的话：{{tianGou.DATA}}{{tianGou1.DATA}}））
-    public static final boolean OPEN_WEATHER_NOW = false; //切换天气类型为实时（false为天气预报，true为实时天气）
+    public static final boolean OPEN_WEATHER_NOW = true; //切换天气类型为实时（false为天气预报，true为实时天气）
     public static final boolean OPEN_HF_WEATHER = false; //切换天气源为和风天气（目前只支持天气预报）
     public static final boolean OPEN_MASTER_MODEL = false; //是否开启主人模式。开启后，后面的用户只会收到第一个用户的内容。
     public static final boolean OPEN_RANDOM_COLOR = true; //是否开启随机消息颜色
@@ -73,28 +73,15 @@ public class AllConfig {
         //  注意：日期里面的数字，填正常的数字就行了.比如1就是1，不要填01
         //  注意：每个用户信息的最后一项不需要加逗号！！！
         userList.add(getUser(
-                "这个人的微信号", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "模板ID", //要给这个人发送的模板ID
-                "pt", //咋称呼这个人
-                "江苏省南京市玄武区", //这个人的详细地址
-                "南京", //这个人在的城市
-                new BirthDay(1999,2,15,true,false), //分别代表年、月、日、是否是农历(true为农历、false为公历)、是否统计天数(true为统计，false为倒计时)
-                new BirthDay(1999,8,11,false,false),
-                new BirthDay(2020,7,8,true,true),
-                new BirthDay(2020,7,8,true,false)
+                "om3JP7AEt1P3XpiRUI710a-AjwpY", //扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "w4qgB16ihRl4CTornGDmam6yLefUbDTv0-TUIOjP2Mg", //要给这个人发送的模板ID
+                "十九", //咋称呼这个人
+                "河北省保定市定州市", //这个人的详细地址
+                "定州市", //这个人在的城市
+                new BirthDay(2002,10,03,false,false)//分别代表年、月、日、是否是农历(true为农历、false为公历)、是否统计天数(true为统计，false为倒计时)
         ));
 
-        userList.add(getUser(
-                "这个人扫码后的微信号",//扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "微信消息模板ID",//要给这个人发送的模板ID
-                "这个人的称呼",//咋称呼这个人
-                "江苏省南京市玄武区",//这个人的详细地址
-                "南京",//这个人在的城市
-                new BirthDay(1999,8,11,false,false),
-                new BirthDay(1999,2,15,true,false),
-                new BirthDay(2020,7,8,true,true),
-                new BirthDay(2020,7,8,true,false)
-        ));
+
 
 
 
